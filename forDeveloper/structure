@@ -1,0 +1,42 @@
+N64_Level_Editor/
+├── Source/
+│   ├── Main.cpp
+│   ├── Actor.cpp
+│   ├── 3DEditor.cpp
+│   ├── FileExplorer.cpp
+│   ├── ...
+├── Include/
+│   ├── Main.h
+│   ├── Actor.h
+│   ├── 3DEditor.h
+│   ├── FileExplorer.h
+│   ├── ...
+├── Resources/
+│   ├── LevelEditor.rc
+│   ├── Icons/
+│   │   ├── icon1.ico
+│   │   ├── icon2.ico
+│   │   ├── ...
+│   ├── Images/
+│   │   ├── image1.png
+│   │   ├── image2.png
+│   │   ├── ...
+├── Models/
+│   ├── Actor1.obj
+│   ├── Actor2.obj
+│   ├── ...
+├── UI/
+│   ├── UI.ui
+├── Config/
+│   ├── Config.ini
+├── Docs/
+│   ├── README.md
+├── Build/
+│   ├── CMakeLists.txt
+├── Bin/
+│   ├── YourApp.exe
+├── Dependencies/
+│   ├── Library1.dll
+│   ├── Library2.dll
+│   ├── ...
+└── .gitignore
