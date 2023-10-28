@@ -30,60 +30,50 @@ void Log(const std::string &message)
     }
 }
 
-/**
- * Initializes the application.
- *
- * @return void
- *
- * @throws ErrorType description of error
- */
-void Initialize() {
+void Initialize()
+{
     // Initialize the application
     Log("Initializing the N64 custom level editor...");
 
     // Your initialization logic here
     // ...
 
-    // Example: Load the necessary libraries
-    if (LoadLibraries()) {
-        Log("Libraries loaded successfully.");
-    } else {
-        Log("Failed to load libraries.");
+    // Example: Initialize COM for Windows application
+    HRESULT hr = CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);
+    if (FAILED(hr))
+    {
+        Log("Failed to initialize COM.");
     }
 
-    // Example: Initialize the graphics system
-    if (InitializeGraphics()) {
-        Log("Graphics system initialized.");
-    } else {
-        Log("Failed to initialize graphics system.");
+    // Example: Create the main window
+    HWND mainWindow = CreateMainWindow();
+    if (mainWindow != nullptr)
+    {
+        Log("Main window created successfully.");
+    }
+    else
+    {
+        Log("Failed to create main window.");
     }
 
-    // Example: Load the level metadata
-    if (LoadLevelMetadata()) {
-        Log("Level metadata loaded.");
-    } else {
-        Log("Failed to load level metadata.");
+    // Example: Initialize Direct3D
+    if (InitializeDirect3D(mainWindow))
+    {
+        Log("Direct3D initialized successfully.");
+    }
+    else
+    {
+        Log("Failed to initialize Direct3D.");
     }
 
-    // Example: Initialize the input system
-    if (InitializeInput()) {
-        Log("Input system initialized.");
-    } else {
-        Log("Failed to initialize input system.");
+    // Example: Load resources
+    if (LoadResources())
+    {
+        Log("Resources loaded successfully.");
     }
-
-    // Example: Load the UI resources
-    if (LoadUIResources()) {
-        Log("UI resources loaded successfully.");
-    } else {
-        Log("Failed to load UI resources.");
-    }
-
-    // Example: Initialize the undo/redo system
-    if (InitializeUndoRedo()) {
-        Log("Undo/redo system initialized.");
-    } else {
-        Log("Failed to initialize undo/redo system.");
+    else
+    {
+        Log("Failed to load resources.");
     }
 
     // ...
