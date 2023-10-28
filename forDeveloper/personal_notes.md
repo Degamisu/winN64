@@ -3,7 +3,6 @@
 for Semoku Midoshiru
 ---
 ## Description
-Certainly, I can help you create a project description for your N64 Level Editor. Here's a basic description:
 
 ---
 
