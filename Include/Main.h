@@ -76,6 +76,9 @@ void Initialize()
         Log("Failed to load resources.");
     }
 
+    // TODO: Add your additional initialization logic here
+    // ...
+
     // ...
 }
 
