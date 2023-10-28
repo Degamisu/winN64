@@ -2,6 +2,42 @@
 
 for Semoku Midoshiru
 ---
+## Description
+Certainly, I can help you create a project description for your N64 Level Editor. Here's a basic description:
+
+---
+
+**Project Name:** N64 Level Editor
+
+**Description:**
+The N64 Level Editor is a Windows application designed to simplify the creation and editing of levels for Nintendo 64 (N64) games. It provides a user-friendly interface with the following key features:
+
+1. **3D Editor Window:** A real-time 3D editor view that allows users to visualize and modify the game world in a 3D space. You can pan, zoom, and rotate the view for precise level design.
+
+2. **Actor Management:** Easily add, position, and manage in-game actors, such as characters, objects, and enemies. Customize their properties and behavior within the level.
+
+3. **File Explorer:** A file management system that enables users to save and load level files, providing seamless access to their projects.
+
+4. **Intuitive User Interface:** A clean and intuitive user interface that streamlines the level design process, making it accessible to both beginners and experienced developers.
+
+**Technical Details:**
+- Development Platform: Windows OS
+- Programming Language: [Insert programming language]
+- 3D Rendering: [Insert 3D rendering library or technology]
+- File Management: [Insert file management method or library]
+
+**Goals:**
+- To provide a tool that empowers game developers and modders to create custom levels for N64 games.
+- To enhance the efficiency and ease of level design for the N64 platform.
+
+**Target Audience:**
+- Game developers, modders, and hobbyists interested in N64 game level design.
+- Anyone looking for a user-friendly, accessible tool for creating custom N64 game levels.
+
+---
+
+Feel free to tailor this description to your specific project's goals and technical details. If you have any specific questions or need assistance with a particular aspect of the project, please let me know, and I'll be happy to help further.
+## TODO List
 1. **Source Code Files**:
    - You'll need source code files for your application. These could be written in a language like C++.
    - Main.cpp: This is where your application starts.
